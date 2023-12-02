@@ -2,6 +2,8 @@
 
 This Hangman game is a simple Python implementation of the classic word-guessing game.
 
+<img src="https://i.imgur.com/pFjz8ep.png" width="400px">
+
 ## Table of Contents
 - [Description](#description)
 - [How to Play](#how-to-play)
