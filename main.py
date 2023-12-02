@@ -1,73 +1,21 @@
+"""
+    This code implements a simple hangman game.
+"""
 import random
+import hangman_art as art
+import hangman_words as words
 
-word_list = ["aardvark", "baboon", "camel"]
-chosen_word = random.choice(word_list)
-
-#print(f'Pssst, the solution is {chosen_word}.')
+chosen_word = random.choice(words.word_list)
 
 display = []
-
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
 
 lives = 6
 
 for _ in enumerate(chosen_word):
     display.append("_")
+
+print(art.logo)
+print(display)
 
 while True:
     guess = input("Guess a letter: ").lower()
@@ -79,7 +27,7 @@ while True:
                     display[i] = guess
         else:
             lives -= 1
-            print (f"You Lost a Life! You have {lives} lives remaining.")
+            print(art.stages[lives])
 
         print(display)
 
@@ -91,9 +39,3 @@ while True:
             break
     else:
         print("INCORRECT INPUT! Please enter a letter.")
-
-
-
-    #TODO-2: - If guess is not a letter in the chosen_word,
-
-    #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
