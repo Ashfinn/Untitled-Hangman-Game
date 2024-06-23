@@ -14,3 +14,6 @@ def get_word():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# Vercel needs a callable named `app`
+app = app
