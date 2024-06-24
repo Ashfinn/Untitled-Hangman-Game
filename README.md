@@ -1,18 +1,15 @@
-# 🎉 Hangman Game
+# 🎉 Untitled Hangman Game
 
-A modern web-based version of the classic Hangman word-guessing game, built with Flask for the backend and HTML, CSS, and JavaScript for the frontend.
-
-![Hangman Game](https://i.imgur.com/pFjz8ep.png)
-
-## 📚 Table of Contents
-- [Description](#description)
-- [Features](#features)
-- [How to Play](#how-to-play)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+```
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \\ / _\` | '_ \\ / _\` | '_ \` _ \\ / _\` | '_ \\ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|
+                    __/ |                      
+                   |___/    
+```
 
 ## 📝 Description
 
@@ -20,11 +17,17 @@ This project is a web-based Hangman game where players guess letters to reveal a
 
 ## ✨ Features
 
-- 🎨 Modern and responsive design
-- 🔥 Smooth animations and transitions
-- 📚 Dynamic word selection
-- 🔔 Real-time feedback on guesses
-- 🖥️ Built with Flask, HTML, CSS, and JavaScript
+- **Classic Hangman Game Mechanics:** Guess the word by suggesting letters within a certain number of attempts.
+- **Terminal-like Design:** The game is designed to look like a terminal interface, providing a retro experience.
+- **Modern and Responsive Design:** The game is fully responsive and works well on mobile devices.
+- **Smooth Animations and Transitions:** Enjoy a seamless gaming experience with fluid animations.
+- **Dynamic Word Selection:** Each game presents a randomly selected word.
+- **Real-time Feedback:** Instant feedback on your guesses.
+- **Built with Flask, HTML, CSS, and JavaScript:** Leveraging modern web technologies for a robust implementation.
+  
+## Demo
+
+![image](https://github.com/Ashfinn/Untitled-Hangman-Game/assets/112419917/c815ed6b-0b17-4d62-975a-1406ac86c58c)
 
 ## 🎮 How to Play
 
@@ -35,31 +38,26 @@ This project is a web-based Hangman game where players guess letters to reveal a
 5. Correct guesses reveal the letter's positions in the word.
 6. Incorrect guesses decrease the number of remaining attempts.
 7. Win by guessing all the letters correctly or lose by running out of attempts.
-
-## ⚙️ Installation
-
-1. **Clone this repository** to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/hangman-game.git
    
-2. **Navigate to the project directory**:
-    ```bash
-    cd hangman-game
+## Installation
 
-3. **Install the required dependencies**:
-    ```bash
-    pip install -r requirements.txt
+### Prerequisites
 
-4. **Run the Flask application**:
-    ```bash
-    python app.py
+- Python 3.x
+- Flask
 
-5. **Open your web browser and go to `http://127.0.0.1:5000/` to play the game.**
+## Project Structure
 
-## 🚀 Usage
+- `api/index.py`: The main Flask application file.
+- `templates/`: Contains the HTML file.
+- `static/css/`: Contains the CSS file.
+- `static/js/`: Contains the JavaScript file.
+- `requirements.txt`: Lists the Python dependencies.
 
-* The game is ready to play after installation. Simply follow the instructions on the screen to guess the word.
-* The game can be customized by adding more words to the `hangman_words.py` file.
+## Code Overview
+
+### Backend (Flask) 
+### Frontend (Vanilla Js)
 
 ## 🤝 Contributing
 
@@ -75,7 +73,4 @@ Contributions are what make the open-source community such an amazing place to l
 
 Distributed under the MIT License. See LICENSE for more information.
 
-## 📬 Contact
-
-Your Name - your-email@example.com
 Project Link: https://github.com/yourusername/hangman-game
